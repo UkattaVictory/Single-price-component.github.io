@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright_Yellow: hsl(71, 73%, 54%);
+    --Light_Gray: hsl(204, 43%, 93%);
+    --Grayish_Blue: hsl(218, 22%, 67%);
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+     background-color: var(--Light_Gray);
+     font-family: "Karla", sans-serif;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.pricing-container{
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffff;
+}
+.header_section{
+    grid-column: 1/-1;
+     padding: 2rem;
+}
+.header_section h1{
+    color: var(--Cyan);
+    font-weight: 700;
+    margin-block: 10px 20px;
+}
+.header_section h3{
+    color:var(--Bright_Yellow);
+    margin-block: 0px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.header_section p{
+    color: var(--Grayish_Blue);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;   
+}
+.information_section{
+    display:grid;
+    grid-template-columns: 1fr;
+      color: #ffffff;
+}
+.price{
+   background-color:  #2bb3b1;
+   padding: 1.5rem 2rem ;
+}
+.price h2{
+    font-size: 25px;
+    margin-block: 0px 20px;
+}
+.price-tag{
+    display:flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.amount{
+    font-size: 2.5rem;
+}
+.duration{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 20px;
+}
+.price button{
+    width: 100%;
+    margin-block: 20px 10px;
+    background-color:var(--Bright_Yellow);
+    box-shadow:  0px 3px 3px 3px rgba(0,0,0, 0.2);
+    padding: 15px;
+    color: #ffff;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.features{
+    background-color:#4abebd;
+    padding:  1.5rem 2rem;
+}
+.features ul{
+    list-style-type: none;
+}
+.features h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.features li{
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+@media(min-width: 769px){
+    .pricing-container{
+        max-width: 800px;
+    }
+    .information_section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+      color: #ffffff;
+}
+  .price, .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

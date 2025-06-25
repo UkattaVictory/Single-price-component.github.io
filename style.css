@@ -27,7 +27,6 @@ section{
     display: grid;
     grid-template-rows: auto 1fr;
     width: 100%;
-    /* max-width: 400px; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #ffff;
 }
@@ -62,7 +61,7 @@ section{
    padding: 1.5rem 2rem ;
 }
 .price h2{
-    font-size: 25px;
+    font-size: 20px;
     margin-block: 0px 20px;
 }
 .price-tag{
